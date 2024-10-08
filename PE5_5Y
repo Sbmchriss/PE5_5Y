@@ -1,0 +1,13 @@
+# a) Request an integer input range.
+input_range = int(input("Enter an integer range: "))
+
+# b) Implement a list of the numbers 1 to range inclusive.
+numbers = list(range(1, input_range + 1))
+
+# c) Request an integer input number.
+input_number = int(input("Enter an integer number to compute its multiplication table: "))
+
+# d) Use a loop upon this list to compute and print the multiplication table of the input number.
+print(f"Multiplication table for {input_number}:")
+for num in numbers:
+    print(f"{input_number} x {num} = {input_number * num}")
